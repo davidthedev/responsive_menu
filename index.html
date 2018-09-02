@@ -8,11 +8,17 @@
 </head>
 <body>
   <nav class="nav">
-    <div class="nav__links">
-      <a href="#">Menu item 1</a>
-      <a href="#">Menu item 2</a>
-      <a href="#">Menu item 3</a>
-    </div>
+    <ul class="nav__links">
+      <li>
+        <a href="#" class="nav__link">Menu item 1</a>
+      </li>
+      <li class="nav__link--active">
+        <a href="#" class="nav__link">Menu item 2</a>
+      </li>
+      <li>
+        <a href="#" class="nav__link">Menu item 3</a>
+      </li>
+    </ul>
     <div class="nav__hamburger">
       <button class="nav__btn">
         <svg class="nav__icon" width="32px" height="32px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
@@ -24,9 +30,9 @@
 
   <div class="dropdown-nav">
     <div class="dropdown-nav__links">
-      <a href="#">Submenu item 1</a>
-      <a href="#">Submenu item 2</a>
-      <a href="#">Submenu item 3</a>
+      <a href="#">Dropdown menu item 1</a>
+      <a href="#">Dropdown menu item 2</a>
+      <a href="#">Dropdown menu item 3</a>
     </div>
   </div>
 </body>

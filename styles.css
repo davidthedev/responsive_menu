@@ -21,7 +21,7 @@ body, .nav {
   clear: both;
 }
 
-.nav .nav__btn {
+.nav__btn {
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -30,7 +30,16 @@ body, .nav {
   padding: 0;
 }
 
-.nav .nav__links a {
+.nav__links {
+  margin: 0;
+  padding: 0;
+}
+
+.nav__links li {
+  display: inline-block;
+}
+
+.nav__link {
   color: #fff;
   display: inline-block;
   margin-left: -4px;
@@ -38,12 +47,22 @@ body, .nav {
   text-decoration: none;
 }
 
-.nav .nav__links a:first-child {
+.nav__link:first-child {
   margin-left: 0;
 }
 
-.nav .nav__links a:hover {
+.nav__link:hover {
   background-color: #000;
+}
+
+.nav__link--active:after {
+  border-bottom: 2px solid #EA5600;
+  content: '';
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -8px;
+  width: 40px;
 }
 
 .nav__hamburger {
@@ -52,7 +71,7 @@ body, .nav {
   margin-right: 12px;
 }
 
-.nav__hamburger .nav__icon {
+.nav__icon {
   display: block;
   fill: #fff;
 }
@@ -64,7 +83,7 @@ body, .nav {
 
 }
 
-.dropdown-nav .dropdown-nav__links a {
+.dropdown-nav__links a {
   background-color: #000;
   color: #fff;
   display: block;
@@ -72,7 +91,7 @@ body, .nav {
   text-decoration: none;
 }
 
-.dropdown-nav .dropdown-nav__links a:hover {
+.dropdown-nav__links a:hover {
   background-color: #323232;
 }
 
